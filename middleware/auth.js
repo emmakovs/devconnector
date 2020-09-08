@@ -1,7 +1,7 @@
 const jwt = require('jsonwebtoken');
 const config = require('config');
 
-//middleware function, has access to request/response, next is a callback that runs once done
+//middleware function, has access to request/response objects, next is a callback that runs once done
 module.exports = function (req, res, next) {
   //Get token from header
   const token = req.header('x-auth-token');
